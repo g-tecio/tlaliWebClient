@@ -11,6 +11,7 @@
 </template>
 
 <script>
+//change navbar
 export default {
   //Values expected by this component, passed from the parent @pages/articles/index.vue
   //Ready to be used on <template>
@@ -25,12 +26,14 @@ a {
 }
 
 h1 {
+  font-weight: bold;
   font-size: 20px;
   margin-block-start: 5px;
   margin-block-end: 5px;
 }
 
 h2 {
+  color: gray;
   font-size: 12px;
   margin-block-end: 5px;
   margin-block-end: 5px;
@@ -41,6 +44,8 @@ h2 {
   border: 1px solid #cccccc;
   margin: 10px auto 10px auto;
   width: 70%;
+  font-family: 'Lucida Sans';
+  
 }
 
 .article:hover {
