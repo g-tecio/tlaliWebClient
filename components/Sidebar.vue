@@ -2,6 +2,18 @@
 <!-- Navigation bar -->
   <header>
     <img  src="@/assets/menu.png" class="imgmenu">
+    <script src="Vue-Responsive.min.js"></script> 
+
+
+    <div id="example-1">
+  <button @click="show = !show">
+    Toggle render
+  </button>
+  <transition name="slide-fade">
+    <p v-if="show">hello</p>
+  </transition>
+</div>
+
     <nav class="borde">
       
       <ul >
@@ -64,8 +76,30 @@
   
   <!-- <p id="txti">Client Viewer</p> -->
 </template>
+<script>
+export default {
+ 
+
+  data: {
+    show: true
+  }
+
+}
+</script>
+
 
 <style>
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for <2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
 body {
   font-family: Verdana;
   margin: 0;
@@ -77,7 +111,6 @@ a {
   color:black;
   text-decoration: none;
 }
-
 
 header {
   border: lightgrey .03px solid;
