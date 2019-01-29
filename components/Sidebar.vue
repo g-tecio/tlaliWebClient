@@ -4,7 +4,7 @@
     <img  src="@/assets/menu.png" class="imgmenu">
     <script src="Vue-Responsive.min.js"></script> 
 
-
+<!-- este comentario para commit -->
     <div id="example-1">
   <button @click="show = !show">
     Toggle render
