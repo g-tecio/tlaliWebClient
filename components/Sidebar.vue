@@ -1,9 +1,10 @@
 <template>
 <!-- Navigation bar -->
   <header>
+    <img  src="@/assets/menu.png" class="imgmenu">
     <nav class="borde">
-      <ul>
-        
+      
+      <ul >
         <p id="txti">Menú</p>
         <hr id="hr1">
         <br>
@@ -66,8 +67,10 @@
 
 <style>
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
   margin: 0;
+  /* border: 5px; */
+  
 }
 
 a {
@@ -77,6 +80,7 @@ a {
 
 
 header {
+  border: lightgrey .03px solid;
   background-color:ghostwhite;
   font-size: 20px;
   font-family: fantasy;
@@ -104,7 +108,7 @@ ul {
 li {
   margin: 0 20px;
   padding: 3%;
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lucida Sans Unicode';
   
 }
 #txti{
@@ -134,12 +138,17 @@ font-weight: bold;
 } 
 .imgmenu{
   
-    margin-left: 10px;
+    margin-left: 450px;
     display: flex;
     width: 40;
     height: 40px;
+
+}
+.imgmenu:hover{
+  background-color: aqua;
 }
 .borde{
+  border: 2px;
   border-color: brown;
 }
 
